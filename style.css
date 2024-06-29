@@ -1,0 +1,885 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    /* color: #222; */
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    /* color: #222; */
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700px;
+    font-size: 12px;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
+}
+
+/* Navbar start here */
+#navbar{
+position: sticky;
+top: 0;    
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 25px 90px;
+background-color: white;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+/* height: 60px; */
+z-index: 999;
+}
+#nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-list li{
+    padding: 0 30px;
+}
+#nav-list li a{
+    color: black;
+    transition: 0.2s linear;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+#nav-list li a:hover,
+#nav-list li a.active{
+color: rgb(87, 158, 158);
+border-bottom: 1px solid rgb(87, 158, 158) ;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close{
+    display: none;
+}
+/* Navbar end here */
+
+
+/* olympic game container start here */
+#olympic-game-container{   
+    background-image: url(/images/distributive-results-header.png);
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#olympic-game-container p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+/* olympic game container end here */
+
+
+/* About Game Container start here  */
+
+#about-game-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about-game-container .about-box{
+    width: 250px;
+    align-items: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgb(173, 173, 164);
+    border-radius: 5px;
+}
+
+#about-game-container .about-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);   
+}
+
+#about-game-container .about-box h6{
+    /* display: inline-block; */
+    text-align: center;
+    padding: 9px 8px 6px 8px;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.about-box img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* About Game Container end here  */
+
+/* game details container start here */
+ 
+ 
+ #game-details{
+     text-align: center;
+    }
+    
+    #game-details p{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    
+    #game-details .game-container{
+        display: flex;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    #game-details .game{
+        width: 30%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: 1px solid rgb(197, 187, 187);
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 15px 0;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+        transition: 0.2s linear;
+    }
+    #game-details .game:hover{
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    }
+    #game-details .game img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    #game-details .game .desc{
+        text-align: start;
+        padding: 10px 0;
+    }
+    
+    #game-details .game .desc h6{
+        padding-bottom: 5px;
+        font-size: 17px;
+        font-weight: 700;
+        
+    }
+    
+    /* game details container end here */
+
+/* game banner start here */
+
+#game-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#game-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(/images/results.avif);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#game-banner .banner-box-2{
+    background-image: url(/images/pexels-lumierestudiomx-974501.jpg);
+}
+
+.banner-box h1{
+    color: white;
+    padding: 10px 10px;
+}
+
+button.btn{
+    margin-left: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 22px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s linear;
+}
+
+#game-banner .banner-box:hover button{
+    background-color: #43f7eb;
+}
+
+/* game banner end here */
+
+
+
+/* News banner start here */
+
+#news-banner{
+    background-image: url(/images/2nd-blue-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color: #041e42; */
+}
+
+#news-banner h2{
+    /* font-size: 25px; */
+    color: white;
+    font-weight: 800;
+}
+
+#news-banner p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    padding-top: 10px;
+}
+
+#news-banner input{
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+#news-banner button{
+    background-color: #27c9be;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+
+
+/* News banner end here */
+
+/* footer start here */
+
+footer{
+    padding: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .footer-col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .footer-logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 18px;
+    padding-bottom: 20px ;
+}
+
+footer p{
+    font-size: 16px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 7px;
+}
+
+footer .install-apps .img-row img{
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+footer .install-apps img{
+    margin: 10px 0 15px 0;
+}
+
+/* footer end here */
+
+
+/* sprinting HTML Page Start here */
+/* sprinting detail start here */
+#sprinting-game-details .sprinting-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sprinting-img{
+    width: 90%;
+}
+.sprinting-container p{
+    line-height: 30px;
+    font-size: 20px;
+    padding: 20px 0;
+    
+}
+.sprinting-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+/* sprinting detail end here */
+/* sprinting HTML Page end here */
+#tennis-game-details .tennis-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tennis-img{
+    width: 90%;
+}
+.tennis-container p{
+    line-height: 30px;
+    font-size: 20px;
+    padding: 20px 0;
+    
+}
+.tennis-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+/* Tennis HTML-page start here */
+/* tennis detail start here */
+
+/* tennis detail end here */
+/* Tennis HTML-page start here */
+
+/* javeline throw HTML-page start here */
+
+/* javeline throw detail start here */
+#javeline-game-details .paralympic-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.javeline-img{
+    width: 90%;
+}
+.javeline-container p{
+    line-height: 30px;
+    font-size: 20px;
+    padding: 20px 0;
+    
+}
+.javeline-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+/* javeline throw detail end here */
+/* javeline throw HTML-page end here */
+
+/* paralympic HTML-page start here */
+/* paralympic detail start here */
+#paralympic-game-details .paralympic-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.paralympic-img{
+    width: 90%;
+}
+.paralympic-container p{
+    line-height: 30px;
+    font-size: 20px;
+    padding: 20px 0;
+    
+}
+.paralympic-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+/* paralympic detail end here */
+/* paralympic HTML-page end here */
+
+/* Hockey html page start here */
+/* hockey details start here */
+#hockey-game-details .hockey-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hockey-img{
+    width: 90%;
+}
+.hockey-container p{
+    line-height: 30px;
+    font-size: 20px;
+    padding: 20px 0;
+    
+}
+.hockey-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+/* hockey details end here */
+/* Hockey html page end here */
+
+/* gymnastic html page start here */
+/* gymnastic details start here */
+#gym-game-details .gym-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gym-img{
+    width: 90%;
+}
+.gym-container p{
+    line-height: 30px;
+    font-size: 20px;
+    padding: 20px 0;
+    
+}
+.gym-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+/* gymnastic details end here */
+/* gymnastic html page start here */
+
+
+/* about html page start here */
+/* about-details start here */
+#about-details{
+    display: flex;
+    justify-content: center;
+}
+#about-details div{
+    padding-left: 30px;
+}
+
+#about-details img{
+    width:50%;
+    height: auto;
+    border-radius: 10px;
+}
+#about-details p{
+    padding-top: 15px;
+    font-size: 18px;
+    line-height: 25px;
+}
+/* about-details end here */
+/* about html page start here */
+
+/* contact html page start here */
+/* form details start here */
+#form-details form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+#form-details span{
+    font-size: 12px;
+}
+
+#form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 13px 17px;
+    outline: none;
+    margin-bottom: 25px;
+    border: 1px solid #e1e1e1;
+}
+#form-details form button{
+    background-color: aqua;
+    color: black;
+    font-weight: 600;
+    padding: 12px 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+/* form details end here */
+/* contact html page end here */
+
+/* faqs html page start here */
+/* faqs details start here */
+.faqs-header{
+    background-image: url(/images/Faqs.jpg);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 3%;
+    /* border-radius: 30px; */
+    max-height: 300px;
+    color: white;
+}
+
+.faqs-header-hd{
+    font-size: 48px;
+    letter-spacing: 1.5;
+}
+
+
+.faqs-header-para{
+    font-size: 20px;
+    letter-spacing: 1;
+    text-align: center;
+}
+.search{
+    width: 60%;
+    height: 50px;
+    background-color: white;
+    margin-top: 3%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.search input{
+    width: 80%;
+    height: 100%;
+    padding: 2% 3%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.search button{
+    width: 20%;
+    min-width: 100px;
+    height: 100%;
+    background-color: rgb(108, 119, 119);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+.search button:hover{
+    background-color: rgb(147, 163, 163);
+    
+}
+
+.faq{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.faq-name{
+    flex: 0.5;
+    padding: 0 100px;
+}
+.faq-hd{
+    padding: 5% 0 0 0;
+    font-size: 40px;
+    letter-spacing: 2;
+}
+.faq-box{
+    flex: 1;
+    min-height: 320px;
+    padding: 2% 0 4% 4%;
+}
+.faq-wrapper{
+    width: 100%;
+    padding: 1.5rem;
+    border-bottom: 1px solid black;
+}
+.faq-title{
+    display: block;
+    position: relative;
+    width: 100%;
+    letter-spacing: 1.2;
+    font-size: 24px;
+    font-weight: 600;
+    color: yellowgreen;
+}
+
+.faq-title::after{
+    width: 10px;
+    height: 10px;
+    content: "";
+    float: right;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    transform: rotate(135deg);
+    transition: 0.3s linear;
+}
+
+.faq-detail{
+    line-height: 1.5;
+    letter-spacing: 1;
+    overflow: hidden;
+    transition: 0.3s linear;
+    font-size: 20px;
+}
+.faq-trigger{
+    display: none;
+    
+}
+.faq-trigger:checked + .faq-title + .faq-detail{
+    max-height: 0;
+}
+.faq-trigger:checked + .faq-title::after{
+    transform: rotate(-45deg);
+    transition: 0.3s linear;
+}
+/* faqs details end here */
+/* faqs html page end here */
+
+
+/* media query start here */
+
+@media (max-width:799px) {
+    #nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s linear;
+    }
+    #nav-list.active{
+        right: 0px;
+    }
+    #nav-list li{
+        margin-bottom: 30px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 35px;
+        color: black;
+        font-size: 24px;
+    }
+
+    #olympic-game-container {
+        height: 70vh;
+        padding: 20px 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #about-game-container{
+        justify-content: center;
+        /* padding: 10px 0px; */
+        row-gap: 30px ;
+        column-gap: 20px;
+    }
+
+
+    #game-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+    
+    .banner-box{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #banner .banner-box{
+        width: 100%;
+        padding: 10px 80px;
+    }
+
+    #game-details .game-container {
+        column-gap: 35px; 
+        width: 100%;
+    }
+
+    #news-banner {
+        
+        height: 20vh;
+        justify-content: center;
+        
+    }
+
+    #about-details {
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    #about-details h2{
+        font-size: 23px;
+    }
+
+}
+
+
+@media (max-width:477px) {
+
+    #navbar{
+        padding: 10px 20px;
+    }
+
+
+    #game-banner .banner-box {
+        height: 40vh;
+        width: 100%;
+        
+    }
+
+    #game-details .game-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #game-details h2{
+        font-size: 30px;
+    }
+
+    .banner-box h1{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .banner-box button{
+        padding: 10px 10px;
+        font-size: 10px;
+    }
+
+    #news-banner{
+        height: 30vh;
+    }
+
+    #news-banner h2{
+        font-size: 25px;
+    }
+
+    #news-banner p{
+        font-size: 12px;
+    }
+
+    #news-banner button{
+        border-radius: 8px;
+    }
+
+    .sprinting-container p{
+        font-size: 12px;
+    }
+
+    .sprinting-container img{
+        width: 100%;
+    }
+
+    .tennis-container p{
+        font-size: 12px;
+    }
+
+    .javeline-container p{
+        font-size: 12px;
+    }
+
+    .paralympic-container p{
+        font-size: 12px;
+    }
+
+    .hockey-container p{
+        font-size: 12px;
+    }
+
+    .gym-container p{
+        font-size: 12px;
+    }
+
+    #about-details p{
+        font-size: 10px;
+        line-height: 10px;
+        /* line-break: auto
+        ; */
+    }
+    #about-details h2{
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    #form-details form{
+        width: 90%;
+        
+    }
+
+
+}
+/* media query end here */
+
+
+
